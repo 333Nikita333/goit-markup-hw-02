@@ -8,6 +8,14 @@
 
 /* Основні змінні сайту */
 :root {
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --accent-color: #2196F3;
+    --primary-background-color: #ffffff;
+    --team-background-color: #F5F4FA;
+    --another-background-color: #2F303A;
+    --footer-adress-text-color: rgba(255, 255, 255, 0.6);
+
 }
 
 .page {
@@ -103,9 +111,14 @@ ul {
 .adress-text {
     color: #ffffff;
 }
-.adress-link {
-    color: rgba(255, 255, 255, 0.6);
+.adress-text:hover,
+.adress-text:focus {
+    color: #2196F3;
 }
 .footer .link {
     color: rgba(255, 255, 255, 0.6);
+}
+.footer .link:hover,
+.footer .link:focus {
+    color: #2196F3;
 }
