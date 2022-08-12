@@ -1,37 +1,111 @@
-/* Основні змінні сайту */
-:root {
-
-}
-
-
-.page {
-    background-color: #ffffff;
-    color: #757575;
-}
-
-/* Навігація */
-.logo {
-    color: #2196F3;
-}
-.studio {
-    color: #000000;
-}
-.site-nav {
-    color: #212121;
-    
-}
-
-
-ul {
-   list-style: none; 
-}
-
-
-
 /* Колір основного тексту #212121 */
 /* Колір вторичного тексту #757575 */
 /* Колір акценту #2196F3*/
 /* Колір основного фону #ffffff*/
 /* Колір фону секції Наша команда #F5F4FA*/
 /* Колір фону шапки та футера #2F303A */
-/* Колір адреси футера rgba(255, 255, 255, 0.6)*/
+/* Колір тексту адреси футера rgba(255, 255, 255, 0.6)*/
+
+/* Основні змінні сайту */
+:root {
+}
+
+.page {
+    background-color: #ffffff;
+    color: #757575;
+}
+ul {
+    list-style: none;
+}
+
+
+
+/* Навігація */
+.logo {
+    color: #2196F3;
+}
+.logo .logo-studio {
+    color: #000000;
+}
+.link {
+    color: #212121;
+}
+.site-nav.list {
+    color: #212121;
+}
+.site-nav .link:hover, 
+.site-nav .link:focus {
+    color: #2196F3;
+}
+.site-adress {
+    color: #757575;
+}
+.site-adress .link:hover, 
+.site-adress .link:focus  {
+    color: #2196F3;
+}
+
+
+
+/* Шапка основного контенту */
+.main-section {
+    background-color: #2F303A;
+}
+.main-section .title {
+    color: #ffffff;
+}
+.button {
+    cursor: pointer;
+    background-color: #2196F3;
+    color: #ffffff;
+}
+.button :hover
+.button :focus {
+    color:#2196F3 ;
+}
+
+
+
+/* Особливості */
+.section .feature-title {
+    color: #212121;
+}
+
+
+
+/* Чим ми займаємось */
+.section .title {
+    color: #212121;
+}
+
+
+
+/* Наша команда */
+.team .title {
+    color: #212121;
+}
+.person-name {
+    color: #212121;
+}
+.team {
+    background-color: #F5F4FA;
+}
+
+
+
+/* Футер сайту */
+.footer {
+    background-color: #2F303A;
+}
+.footer .logo-studio {
+    color: #ffffff;
+}
+.adress-text {
+    color: #ffffff;
+}
+.adress-link {
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer .link {
+    color: rgba(255, 255, 255, 0.6);
+}
