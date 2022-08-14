@@ -8,19 +8,20 @@
 
 /* Основні змінні сайту */
 :root {
-    --primary-text-color: #212121;
-    --secondary-text-color: #757575;
+    --primary-text-color: #757575;
+    --secondary-text-color: #212121;
     --accent-color: #2196F3;
     --primary-background-color: #ffffff;
+    --secondary-background-color: #2F303A;
     --team-background-color: #F5F4FA;
-    --another-background-color: #2F303A;
     --footer-adress-text-color: rgba(255, 255, 255, 0.6);
+    --logo-text-color: #000000
 
 }
 
 .page {
-    background-color: #ffffff;
-    color: #757575;
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
 }
 ul {
     list-style: none;
@@ -30,60 +31,60 @@ ul {
 
 /* Навігація */
 .logo {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 .logo .logo-studio {
-    color: #000000;
+    color: var(--logo-text-color);
 }
 .link {
-    color: #212121;
+    color: var(--secondary-text-color);
 }
 .site-nav.list {
-    color: #212121;
+    color: var(--primary-text-color);
 }
 .site-nav .link:hover, 
 .site-nav .link:focus {
-    color: #2196F3;
+    color: var(--accent-color);
 }
-.site-adress {
-    color: #757575;
+.site-adress .link{
+    color: var(--primary-text-color);
 }
 .site-adress .link:hover, 
 .site-adress .link:focus  {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 
 
 /* Шапка основного контенту */
 .main-section {
-    background-color: #2F303A;
+    background-color: var(--secondary-background-color);
 }
 .main-section .title {
-    color: #ffffff;
+    color: var(--primary-background-color);
 }
 .button {
     cursor: pointer;
-    background-color: #2196F3;
-    color: #ffffff;
+    background-color: var(--accent-color);
+    color: var(--primary-background-color);
 }
 .button :hover
 .button :focus {
-    color:#2196F3 ;
+    color:var(--accent-color);
 }
 
 
 
 /* Особливості */
 .section .feature-title {
-    color: #212121;
+    color: var(--secondary-text-color);
 }
 
 
 
 /* Чим ми займаємось */
 .section .title {
-    color: #212121;
+    color: var(--secondary-text-color);
 }
 
 
@@ -111,14 +112,10 @@ ul {
 .adress-text {
     color: #ffffff;
 }
-.adress-text:hover,
-.adress-text:focus {
-    color: #2196F3;
-}
 .footer .link {
     color: rgba(255, 255, 255, 0.6);
 }
 .footer .link:hover,
 .footer .link:focus {
-    color: #2196F3;
+    color: var(--accent-color);
 }
