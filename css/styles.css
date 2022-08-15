@@ -1,8 +1,8 @@
-/* Колір основного тексту #212121 */
-/* Колір вторичного тексту #757575 */
+/* Колір основного тексту  #757575*/
+/* Колір вторичного тексту #212121 */
 /* Колір акценту #2196F3*/
 /* Колір основного фону #ffffff*/
-/* Колір фону секції Наша команда #F5F4FA*/
+/* Колір вторичного фону #F5F4FA*/
 /* Колір фону шапки та футера #2F303A */
 /* Колір тексту адреси футера rgba(255, 255, 255, 0.6)*/
 
@@ -12,8 +12,8 @@
     --secondary-text-color: #212121;
     --accent-color: #2196F3;
     --primary-background-color: #ffffff;
-    --secondary-background-color: #2F303A;
-    --team-background-color: #F5F4FA;
+    --secondary-background-color: #F5F4FA;
+    --other-background-color: #2F303A;
     --footer-adress-text-color: rgba(255, 255, 255, 0.6);
     --logo-text-color: #000000
 
@@ -28,7 +28,7 @@ ul {
 }
 
 
-
+/* Стилі для index.html */
 /* Навігація */
 .logo {
     color: var(--accent-color);
@@ -39,8 +39,8 @@ ul {
 .link {
     color: var(--secondary-text-color);
 }
-.site-nav.list {
-    color: var(--primary-text-color);
+.site-nav.list .current{
+    color: var(--accent-color);
 }
 .site-nav .link:hover, 
 .site-nav .link:focus {
@@ -58,7 +58,7 @@ ul {
 
 /* Шапка основного контенту */
 .main-section {
-    background-color: var(--secondary-background-color);
+    background-color: var(--other-background-color);
 }
 .main-section .title {
     color: var(--primary-background-color);
@@ -68,10 +68,6 @@ ul {
     background-color: var(--accent-color);
     color: var(--primary-background-color);
 }
-.button :hover
-.button :focus {
-    color:var(--accent-color);
-}
 
 
 
@@ -79,7 +75,20 @@ ul {
 .section .feature-title {
     color: var(--secondary-text-color);
 }
-
+/* Приховані заголовки секцій Особливості та Портфоліо */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 
 
 /* Чим ми займаємось */
@@ -91,31 +100,50 @@ ul {
 
 /* Наша команда */
 .team .title {
-    color: #212121;
+    color: var(--secondary-text-color);
 }
 .person-name {
-    color: #212121;
+    color: var(--secondary-text-color);
 }
 .team {
-    background-color: #F5F4FA;
+    background-color: var(--secondary-background-color);
 }
 
 
 
 /* Футер сайту */
 .footer {
-    background-color: #2F303A;
+    background-color: var(--other-background-color);
 }
 .footer .logo-studio {
-    color: #ffffff;
+    color: var(--primary-background-color);
 }
 .adress-text {
-    color: #ffffff;
+    color: var(--primary-background-color);
 }
 .footer .link {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--footer-adress-text-color);
 }
 .footer .link:hover,
 .footer .link:focus {
     color: var(--accent-color);
+}
+
+
+
+/* Стилі для portfolio.html */
+.filters-list .button{
+    color: var(--secondary-text-color);
+    background-color: var(--secondary-background-color);
+}
+.filters-list .button:hover,
+.filters-list .button:focus {
+    color: var(--primary-background-color);
+    background-color: var(--accent-color);
+}
+.portfolio-title{
+    color: var(--secondary-text-color);
+}
+.portfolio-list .text{
+    color: var(--primary-text-color);
 }
