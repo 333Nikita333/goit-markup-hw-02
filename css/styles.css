@@ -191,6 +191,10 @@ ul {
     color: var(--primary-background-color);
     background-color: var(--accent-color);
 }
+.button.current {
+    background-color: var(--accent-color);
+    color: var(--primary-background-color);
+}
 .portfolio-list a {
     text-decoration: none;
 }
