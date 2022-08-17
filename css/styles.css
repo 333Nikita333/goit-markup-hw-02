@@ -27,9 +27,6 @@ body {
     font-size: 14px;
     letter-spacing: 0.03em;
 }
-ul {
-    list-style: none;
-}
 
 
 
@@ -50,25 +47,30 @@ ul {
     color: var(--secondary-text-color);
     text-decoration: none;
 }
+.list {
+    list-style: none;
+}
 .site-nav.list,
-.site-adress .link {
+.site-adress.list .link {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    list-style: none;
+}
+.site-adress .link{
+    color: var(--primary-text-color);
 }
 .site-nav .link:hover, 
 .site-nav .link:focus,
 .site-adress .link:hover,
 .site-adress .link:focus,
 .site-nav.list .current,
-/* Для футеру */
+/* ...для футеру */
 .footer .link:hover,
 .footer .link:focus {
     color: var(--accent-color);
 }
-.site-adress .link{
-    color: var(--primary-text-color);
-}
+
  
 
 
@@ -177,17 +179,18 @@ ul {
 
 
 
-/* Стилі для portfolio.html */
-.filters-list .button{
+/* Стилі для Портфоліо */
+.filters.list .button{
     color: var(--secondary-text-color);
     background-color: var(--secondary-background-color);
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.86;
     cursor: pointer;
 }
-.filters-list .button:hover,
-.filters-list .button:focus {
+.filters.list .button:hover,
+.filters.list .button:focus {
     color: var(--primary-background-color);
     background-color: var(--accent-color);
 }
@@ -195,7 +198,7 @@ ul {
     background-color: var(--accent-color);
     color: var(--primary-background-color);
 }
-.portfolio-list a {
+.portfolio.list a {
     text-decoration: none;
 }
 .portfolio-title{
@@ -205,7 +208,7 @@ ul {
     line-height: 2;
     letter-spacing: 0.06em;
 }
-.portfolio-list .text{
+.portfolio.list .text{
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.88;
